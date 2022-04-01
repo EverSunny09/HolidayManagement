@@ -5,5 +5,26 @@
              version="3.0">
     <persistence-unit name="default">
 
+        <class>entity.AdminEntity</class>
+        <class>entity.ConstraintsEntity</class>
+        <class>entity.DepartmentEntity</class>
+        <class>entity.EmployeeEntity</class>
+        <class>entity.HolidayRequestEntity</class>
+        <class>entity.RequestStatusEntity</class>
+        <class>entity.RequestWithConstraintEntity</class>
+        <class>entity.RoleEntity</class>
+        <properties>
+            <property name="toplink.jdbc.url" value="jdbc:mysql://localhost:3306/holiday_management"/>
+            <property name="toplink.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+            <property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/holiday_management"/>
+            <property name="hibernate.connection.driver_class" value="com.mysql.cj.jdbc.Driver"/>
+            <property name="hibernate.connection.user" value="root"/>
+            <property name="hibernate.connection.password" value="123qwe"/>
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="openjpa.ConnectionURL" value="jdbc:mysql://localhost:3306/holiday_management"/>
+            <property name="openjpa.ConnectionDriverName" value="com.mysql.cj.jdbc.Driver"/>
+            <property name="eclipselink.jdbc.url" value="jdbc:mysql://localhost:3306/holiday_management"/>
+            <property name="eclipselink.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+        </properties>
     </persistence-unit>
 </persistence>
